@@ -1,0 +1,16 @@
+body{
+    background-color: bisque;
+}
+
+table{
+    border: 1px solid black;
+}
+th{
+    font-weight: 700px;
+}
+tr{
+    border: 1px solid;
+}
+td{
+    border: 1px solid red;
+}

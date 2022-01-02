@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <title>Formulaire de création de compte</title>
+    <meta charset="UTF-8">   
+    <link rel="stylesheet" type="text/css" href="Sanstitre-2.css">
+    <link rel="stylesheet" type="text/css" href="css/inscription.css">
+    <link rel="icon" href="img/logoISENS1.PNG">
+
+</head>
+<body>
+    <h1> Formulaire de création de compte</h1>
+   <p> Les champs marqué par <em>*</em> sont <em>obligatoire</em></p>
+  <fieldset>
+      <legend>Coordonnées de l'etudiant</legend>
+    <form>
+        <ul>
+        <li>            
+        <label for="name">Nom <em>*</em>:</label>
+        <input type="text" id="name" name="name" required 
+           minlength="0" maxlength="100" size="10">
+        </li><br>
+        <li>           
+        <label for="fulname">Prénom <em>*</em>:</label>
+        <input type="text" id="fulname" name="fulname" required 
+           minlength="0" maxlength="100" size="10">
+        </li><br>
+        <li>
+        <label for="sexe">Sexe:</label>
+        <select name="m_sexe" id="sex">
+        <option value="fem">Femme</option>
+        <option value="mas">Masculin</option>
+        </select>
+        </li><br>
+        <li>
+        <label for="email">Email <em>*</em>:</label>
+        <input type="email" name="m_email" autocomplete="off">
+        </li><br>
+        <li>
+        <label for="m_portable">Portabe:</label>
+        <input type="text" name="m_portab" autocomplete="off">
+        </li><br>
+        <li>
+        <label for="meeting-time">Date de naissance:</label>
+        <input type="date" id="meeting" name="meeting"
+                min="01/01/2010" max="31/01/2021" value="20/10/2021">
+        </li><br>
+        <li>
+        <label for="selct">Pays(France Sénégal, <br> Italie Allemagne)</label>
+        <select id="pays">
+            <option value="val1" selected>Sénégal</option>
+            <option value="val2" >France</option>
+            <option value="val3">Italie</option>
+        <option value="val4">Autre pays</option>
+        </select>
+        </li><br>
+        <li>
+        <label for="Comment">Commentaire:</label>
+        <textarea id="Comment" name="Comment" rows="5" cols="33"> Faite un comentaire ...</textarea>
+        </li><br>
+        <li>
+        <input id="click" type="submit" value="Envoyer">
+        </li>
+        </ul>  
+    </form>
+    </fieldset>
+</body>
+</html>
